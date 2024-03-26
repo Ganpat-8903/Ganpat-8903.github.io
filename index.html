@@ -33,7 +33,7 @@
                     <a href="#offers">Offers</a>
                 </li>
                 <li>
-                    <!-- <a href="#collection">Collection</a> -->
+                    <a href="#collection">Collection</a>
                 </li>
             </ul>
             <div class="cart-icon">
@@ -144,63 +144,63 @@
     </section>
 
     <!-- --- Collection ---- -->
-    <section class="section" id="collection">
+    <div class="section" id="collection">
         <h1 class="section-heading">Collection</h1>
-        <div class="grid-card-container">
-            <div class="grid-card" collection="Rado">
+        <div class="grid-card-container row">
+            <div class="grid-card col-md-3" collection="Rado">
                 <img src="images/rado watch.jpg" alt="">
             </div>
-            <div class="grid-card" collection="Geneve">
-                <img src="images/geneve watch.jpg" alt="">
-            </div>
-            <div class="grid-card" collection="Tissot">
+            <div class="grid-card col-md-3" collection="Tissot">
                 <img src="images/tissot watch.jpg" alt="">
             </div>
-            <div class="grid-card" collection="Cartier">
+            <div class="grid-card col-md-3" collection="Geneve">
+                <img src="images/geneve watch.jpg" alt="" >
+            </div>
+            <div class="grid-card col-md-3" collection="Cartier">
                 <img src="images/cartier watch.jpg" alt="">
             </div>
-            <div class="grid-card" collection="Omega">
+            <div class="grid-card col-md-3" collection="Omega">
                 <img src="images/omega watch.jpg" alt="">
             </div>
-            <div class="grid-card" collection="Fitron">
+            <div class="grid-card col-md-3" collection="Fitron">
                 <img src="images/fitron watch.jpg" alt="">
             </div>
         </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div>
-            <p>&copy; 2024 Titan Company. All Rights Reserved.</p>
-        </div>
-    </footer>
+        <!-- Footer -->
+        <footer>
+            <div>
+                <p>&copy; 2024 Titan Company. All Rights Reserved.</p>
+            </div>
+        </footer>
 
-    <!-- Cart Modal -->
-    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body" id="cartContent">
-                </div>
-                <div class="modal-footer">
-                    <span class="total-price">Total: ₹<span id="totalPrice">0.00</span></span>
-                    <button type="button" class="btn btn-success" id="buyBtn" onclick="confirmOrder()">Buy</button>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
-                        style="background-color: red;">Close</button>
+        <!-- Cart Modal -->
+        <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body" id="cartContent">
+                    </div>
+                    <div class="modal-footer">
+                        <span class="total-price">Total: ₹<span id="totalPrice">0.00</span></span>
+                        <button type="button" class="btn btn-success" id="buyBtn" onclick="confirmOrder()">Buy</button>
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                            style="background-color: red;">Close</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-    <script src="main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>

@@ -370,54 +370,24 @@ header {
 
 /* --- Collection --- */
 .grid-card-container {
-    height: 80vh;
-    width: 60%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 1.2rem;
-    grid-auto-rows: 15rem;
+    width: 100%;
+    /* gap: 0 rem; */
+    padding: 3rem;
+    justify-content: center;
 }
 
 .grid-card {
     background: var(--light-gray);
-    position: relative;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    
+    text-align: center;
+    align-self: center;
+    margin: 20px;
 }
 .grid-card img{
-    height:max-content;
-    width: 100%;
-}
-/* .grid-card:nth-child(1) {
-    grid-row: 1/4;
-    background-image: url("images/rado watch.jpg");
-}
+    width: 20rem;
+   padding: 10px;
+   height: auto;
 
-.grid-card:nth-child(2) {
-    background-image: url("images/geneve watch.jpg");
 }
-
-.grid-card:nth-child(3) {
-    grid-row: 1/3;
-    background-image: url("images/tissot watch.jpg");
-}
-
-.grid-card:nth-child(4) {
-    grid-row: 3/4;
-    background-image: url("images/cartier watch.jpg");
-}
-
-.grid-card:nth-child(5) {
-    background-image: url("images/omega watch.jpg");
-}
-
-.grid-card:nth-child(6) {
-    background-image: url("images/fitron watch.jpg");
-} */
 
 .grid-card::before {
     content: "";
@@ -473,7 +443,7 @@ footer {
 
 
 /* ----------Responsive for phone --------------- */
-@media screen and (max-width:500px) {
+@media screen and (max-width:700px) {
 
 /* -----------Home------------- */
     nav {
