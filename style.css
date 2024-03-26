@@ -371,7 +371,6 @@ header {
 /* --- Collection --- */
 .grid-card-container {
     width: 100%;
-    /* gap: 0 rem; */
     padding: 3rem;
     justify-content: center;
 }
@@ -540,76 +539,57 @@ footer {
         justify-content: flex-start;
     }
 
-    /* ---- section-two ---- */
-    .section-two-image {
-        display: none;
-    }
 
+
+    /* -----------------Product-------------- */
     .section-two-heading {
-        font-size: 2.7rem;
+        font-size: 2rem;
     }
-
     .section-two-para {
-        font-size: .93rem;
-        max-width: 100%;
+        font-size: .9rem;
     }
-
+    
     .section-two-price {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+    
+    .section-two-image {
+        width:10rem ;
     }
 
     .section-two-btn {
-        font-size: 1rem;
-        padding: .6rem .9rem;
+        font-size: 0.9rem;
     }
 
     .section-two-container {
-        height: 60vh;
+        height: 20rem;
+        margin-top: 0px;
     }
 
     .section-two-inner-container {
-        width: 90%;
+        padding: 20px;
+        width: 100%
     }
 
-    /* --- section Three ---- */
-    .card-image {
-        width: 17rem;
-    }
 
-    /* --- section four --- */
+    /* --- Offers --- */
     .section-four-heading {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     .section-four-offer {
-        font-size: 3.3rem;
+        font-size: 2rem;
     }
 
     .section-four-btn {
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
-    /* --- section five --- */
-    .grid-card-container {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        width: 90%;
-    }
-
-    .grid-card:nth-child(1),
-    .grid-card:nth-child(3) {
-        grid-row: 1/2;
+    .section-four-container {
+        height: 60vh;
+        background-size: 600px;
     }
 }
 
-@media screen and (max-width: 940px) {
-    .cart-icon {
-        right: 0px;
-        top: 80px;
-        z-index: 1;
-        display: flex; /* Align icon and count horizontally */
-        align-items: center; /* Align vertically */
-    }
-    
-}
+
 
