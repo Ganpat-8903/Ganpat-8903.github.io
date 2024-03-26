@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Titan Watch</title>
+    <link rel="icon" href="images/titan.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Home -->
+    <section class="section" id="home">
+        <nav>
+            <div class="logo">
+                <img src="images/titan_sym.png" alt="">
+            </div>
+            <ul class="navlinks">
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+                <li>
+                    <a href="#product">Product</a>
+                </li>
+                <li>
+                    <a href="#arrivals">Arrivals</a>
+                </li>
+                <li>
+                    <a href="#offers">Offers</a>
+                </li>
+                <li>
+                    <a href="#collection">Collection</a>
+                </li>
+            </ul>
+            <div class="cart-icon">
+                <img src="images/addToCart.png" alt="Cart">
+                <span id="cartCount">0</span>
+            </div>
+            <div class="menu-icon">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+
+        <header>
+            <div class="header-image">
+                <img src="images/Titan Silver Watch.png" alt="img">
+            </div>
+            <div>
+                <h1 class="header-heading">Pure Luxury</h1>
+                <h2 class="product-name">Titan Silver Watch</h2>
+                <p class="header-pricing">₹10,000</p>
+                <div class="btn-container">
+                    <button class="primary-btn">Discover</button>
+                    <button class="secondary-btn" onclick="addToCart('Titan Silver Watch',10000)">Add to Cart</button>
+                </div>
+            </div>
+        </header>
+    </section>
+
+    <!-- --- Product --- -->
+    <section class="section section-two" id="product">
+        <div class="section-two-container">
+            <div class="section-two-inner-container">
+                <div>
+                    <h1 class="section-two-heading">Quartz Casio</h1>
+                    <p class="section-two-para">With Titan, you're not just wearing a watch; you're making a statement.
+                        And there's no better time to start than now!</p>
+                    <p class="section-two-price">₹14,999</p>
+                    <button class="section-two-btn">Order Now</button>
+                </div>
+                <div>
+                    <img src="images/Quartz Casio.png" alt="img" class="section-two-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Arrivals --- -->
+    <section class="section" id="arrivals">
+        <h1 class="section-heading">New Arrivals</h1>
+        <div class="card-container row">
+            <div class="card col-md-4">
+                <img src="images/Neo Splash Blue.png" alt="img" class="card-image">
+                <h2>Neo Splash Blue</h2>
+                <p class="card-price">₹8,100</p>
+                <button class="secondary-btn" onclick="addToCart('Neo Splash Blue',8100)">Add to Cart</button>
+            </div>
+
+            <div class="card col-md-4">
+                <img src="images/Raga Womens Allure.png" alt="img" class="card-image">
+                <h2>Raga Women's Allure</h2>
+                <p class="card-price">₹15,500</p>
+                <button class="secondary-btn" onclick="addToCart('Raga Womens Allure',15500)">Add to Cart</button>
+            </div>
+
+            <div class="card col-md-4">
+                <img src="images/Titan Smart Watch.png" alt="img" class="card-image">
+                <h2>Titan Smart Watch</h2>
+                <p class="card-price">₹21,000</p>
+                <button class="secondary-btn" onclick="addToCart('Titan Smart Watch',21000)">Add to Cart</button>
+            </div>
+        </div>
+        <div class="card-container row">
+            <div class="card col-md-4">
+                <img src="images/Titan Timeless Style Watch.png" alt="img" class="card-image">
+                <h2>Titan Timeless Style Watch</h2>
+                <p class="card-price">₹18,900</p>
+                <button class="secondary-btn" onclick="addToCart('Titan Timeless Style Watch',18900)">Add to
+                    Cart</button>
+            </div>
+
+            <div class="card col-md-4">
+                <img src="images/Titan Womens Lagan Watch.png" alt="img" class="card-image">
+                <h2>Titan Womens Lagan Watch</h2>
+                <p class="card-price">₹12,000</p>
+                <button class="secondary-btn" onclick="addToCart('Titan Womens Lagan Watch',12000)">Add to Cart</button>
+            </div>
+
+            <div class="card col-md-4">
+                <img src="images/Titan Mens Multifunction Karishma.png" alt="img" class="card-image">
+                <h2>Titan Mens Multifunction Karishma</h2>
+                <p class="card-price">₹21,200</p>
+                <button class="secondary-btn" onclick="addToCart('Titan Mens Multifunction Karishma',21200)">Add to
+                    Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Offers --- -->
+    <section class="section-four section" id="offers">
+        <div class="section-four-container">
+            <div class="content">
+                <h1 class="section-four-offer">50% OFF</h1>
+                <h1 class="section-four-heading">Special Collection</h1>
+                <button class="section-four-btn">Shop Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- --- Collection ---- -->
+    <section class="section" id="collection">
+        <h1 class="section-heading">Collection</h1>
+        <div class="grid-card-container">
+            <div class="grid-card" collection="Rado">
+                <img src="images/rado watch.jpg" alt="">
+            </div>
+            <div class="grid-card" collection="Geneve">
+                <img src="images/geneve watch.jpg" alt="">
+            </div>
+            <div class="grid-card" collection="Tissot">
+                <img src="images/tissot watch.jpg" alt="">
+            </div>
+            <div class="grid-card" collection="Cartier">
+                <img src="images/cartier watch.jpg" alt="">
+            </div>
+            <div class="grid-card" collection="Omega">
+                <img src="images/omega watch.jpg" alt="">
+            </div>
+            <div class="grid-card" collection="Fitron">
+                <img src="images/fitron watch.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>&copy; 2024 Titan Company. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="cartContent">
+                </div>
+                <div class="modal-footer">
+                    <span class="total-price">Total: ₹<span id="totalPrice">0.00</span></span>
+                    <button type="button" class="btn btn-success" id="buyBtn" onclick="confirmOrder()">Buy</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                        style="background-color: red;">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
