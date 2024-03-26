@@ -538,7 +538,11 @@ footer {
     header {
         justify-content: flex-start;
     }
-
+    .cart-icon{
+        top: 100px;
+        z-index: 0;
+        position:absolute;
+    }
 
 
     /* -----------------Product-------------- */
@@ -589,6 +593,7 @@ footer {
         height: 60vh;
         background-size: 600px;
     }
+
 }
 
 
