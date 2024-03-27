@@ -3,8 +3,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 ;
+    padding: 0 ;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
@@ -208,6 +208,29 @@ header {
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.remove-btn:hover{
+    transform: scale(1.1);
+}
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+.quantity-btn {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+    padding: 5px 10px; /* Add padding to the buttons */
+    margin: 0 5px; /* Add margin between the buttons */
+    background-color: var(--dark-blue);
+    color: var(--white);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.quantity-btn:hover {
+    background-color: blue; /* Darken the background color on hover */
 }
 
 .total-price {

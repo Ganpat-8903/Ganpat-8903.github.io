@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+   <style>
+    .container {
+    text-align: center;
+    background-color:antiquewhite;
+
+}
+
+h1 {
+    color:green;
+    font-size: 3rem;
+    animation-duration: 6s;
+    animation-name: h1;
+}
+
+p {
+    font-size: 2rem;
+    color:brown;
+    animation-duration: 7s;
+    animation-name: p;
+}
+
+@keyframes h1 {
+    from {
+        opacity: 0;
+        transform: translateY(100px);   
+        background-color: antiquewhite;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        background-color: turquoise;
+    }
+}
+
+@keyframes p {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+   </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Order Confirmed</h1>
+        <p>Your order has been successfully confirmed. Thank you for shopping with us!</p>
+    </div>
+
+   
+</body>
+
+</html>

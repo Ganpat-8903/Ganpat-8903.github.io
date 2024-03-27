@@ -165,9 +165,28 @@
                 <p>&copy; 2024 Titan Company. All Rights Reserved.</p>
             </div>
         </footer>
+<!-- Cart Added Popup Modal -->
+<div class="modal fade" id="addToCartPopup" tabindex="-1" role="dialog" aria-labelledby="addToCartPopupLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="addToCartPopupLabel">My Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
         <!-- Cart Modal -->
-        <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
+        <!-- <div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel"
             aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
                 <div class="modal-content">
@@ -187,7 +206,28 @@
                     </div>
                 </div>
             </div>
+        </div> -->
+        <!-- Cart Modal -->
+<div class="modal fade" id="cartModal" tabindex="-1" role="dialog" aria-labelledby="cartModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="cartContent">
+                <!-- Cart items will be dynamically added here -->
+            </div>
+            <div class="modal-footer">
+                <span class="total-price">Total: ₹<span id="totalPrice">0.00</span></span>
+                <button type="button" class="btn btn-success" id="buyBtn" onclick="confirmOrder()">Buy</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: red;">Close</button>
+            </div>
         </div>
+    </div>
+</div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
