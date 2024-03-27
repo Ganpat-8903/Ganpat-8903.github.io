@@ -8,7 +8,10 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+.row{
+    margin: 0px !important;
+    padding: 0px !important;
+}
 :root {
     --dark-blue: #0A1D3c;
     --light-gray: #E5E5E5;
@@ -121,21 +124,15 @@ header {
 
 .header-image img{
     width: 35rem;
-    transition: transform 0.5s ease;
 }
-.header-image img:hover{
-    transform: scale(1.2);
-}
+
 .header-heading {
     font-size: 5rem;
 }
-
-.header-heading::before {
-    content: "New";
-    position: absolute;
-    top: 160px;
-    color: var(--dark-blue);
+.head-new{
     font-family: 'Allison', cursive;
+    color: var(--dark-blue);
+    font-size: 150px;
 }
 
 .product-name {
@@ -262,12 +259,8 @@ header {
 
 .section-two-image {
     width: 28rem;
-    transition: transform 0.5s ease;
 }
 
-.section-two-image:hover {
-    transform: scale(1.2);
-}
 
 
 
@@ -296,7 +289,7 @@ header {
 }
 
 .card:hover .card-image {
-    transform: scale(1.2); 
+    transform: scale(1.09); 
 }  
 
 .card-price {
@@ -483,7 +476,9 @@ footer {
     .header-heading {
         font-size: 2.5rem;
     }
-
+    .head-new{
+        font-size: 80px;
+    }
     .product-name {
         font-size: 1.1rem;
     }
