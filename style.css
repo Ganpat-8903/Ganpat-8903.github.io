@@ -3,15 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@500&display=swap');
 
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-.row{
+
+
+.row {
     margin: 0px !important;
     padding: 0px !important;
 }
+
 :root {
     --dark-blue: #0A1D3c;
     --light-gray: #E5E5E5;
@@ -32,58 +35,70 @@ nav {
     margin: auto;
 }
 
+nav a {
+    position: relative;
+    text-decoration: none;
+    padding: 6px 20px;
+    transition: .5s;
+    color: var(--dark-gray);
+    font-size: 1rem;
+
+}
+
+.navlinks a.active {
+    color: orange;
+    text-decoration: none;
+    border-bottom: 2px solid red;
+    border-radius: 15px;
+}
+
+.navlinks a:not(.active):hover {
+    color: orange;
+    text-decoration: none;
+}
+
+.navlinks a:not(.active):hover span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+nav a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-bottom: 2px solid red;
+    border-radius: 15px;
+    transform: scale(0) translateY(50px);
+    opacity: 0;
+    transition: .5s;
+}
+
 .section {
     min-height: 100vh;
     width: 100%;
-} 
+    margin-bottom: 300px;
+}
 
-.logo img{
+.logo img {
     margin-top: 2.7rem;
-    height:200px;
+    height: 200px;
 }
 
 .navlinks {
-    display:flex;
-    justify-content:flex-end; 
-    list-style:none;
-    margin-right: 3rem; 
-}
-
-/* Animation under nav-links */
-.navlinks li a::after,
-.navlinks li .active::after {
-    content: "";
-    background: var(--dark-gray);
-    position: absolute;
-    height: .15rem;
-    width: 100%;
-    left: 0px;
-    bottom: -5px;
-    transform: scale(0);
-    transition: transform 0.5s ease;
-    transform-origin: right;
-}
-
-.navlinks li a {
-    text-decoration:none;
-    margin-left: 2.5rem;
-    color: var(--dark-gray);
-    font-size: 1rem;
-    letter-spacing: .03rem;
-    position: relative;
-}
-
-.navlinks li a:hover::after,
-.navlinks li .active::after {
-    transform: scaleX(1);
-    transform-origin: left;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-right: 3rem;
 }
 
 .cart-icon {
     position: fixed;
     right: 20px;
     display: flex;
-    align-items: center; 
+    align-items: center;
     z-index: 2;
 }
 
@@ -95,7 +110,7 @@ nav {
 #cartCount {
     background-color: red;
     color: white;
-    border-radius: 50%; 
+    border-radius: 50%;
     padding: 5px 8px;
     font-size: 15px;
 }
@@ -122,14 +137,15 @@ header {
     margin: auto;
 }
 
-.header-image img{
+.header-image img {
     width: 35rem;
 }
 
 .header-heading {
     font-size: 5rem;
 }
-.head-new{
+
+.head-new {
     font-family: 'Allison', cursive;
     color: var(--dark-blue);
     font-size: 150px;
@@ -289,8 +305,8 @@ header {
 }
 
 .card:hover .card-image {
-    transform: scale(1.09); 
-}  
+    transform: scale(1.09);
+}
 
 .card-price {
     font-size: 1.2rem;
@@ -374,10 +390,11 @@ header {
     align-self: center;
     margin: 20px;
 }
-.grid-card img{
+
+.grid-card img {
     width: 20rem;
-   padding: 10px;
-   height: auto;
+    padding: 10px;
+    height: auto;
 
 }
 
@@ -418,7 +435,7 @@ header {
 
 /* --- Footer --- */
 footer {
-    background-color:lightgray ;
+    background-color: lightgray;
     font-size: 15px;
     height: 10vh;
     width: 100%;
@@ -426,6 +443,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: -300px;
 }
 
 
@@ -437,18 +455,19 @@ footer {
 /* ----------Responsive for phone --------------- */
 @media screen and (max-width:500px) {
 
-/* -----------Home------------- */
+    /* -----------Home------------- */
     nav {
         width: 100%;
     }
 
-    .logo img{
-        height:150px;
+    .logo img {
+        height: 150px;
     }
 
-    .cart-icon{
+    .cart-icon {
         position: absolute;
     }
+
     .cart-icon img {
         height: 35px;
     }
@@ -470,15 +489,18 @@ footer {
         margin: auto;
     }
 
-    .header-image img{
+    .header-image img {
         width: 16rem;
     }
+
     .header-heading {
         font-size: 2.5rem;
     }
-    .head-new{
+
+    .head-new {
         font-size: 80px;
     }
+
     .product-name {
         font-size: 1.1rem;
     }
@@ -490,14 +512,15 @@ footer {
     .primary-btn,
     .secondary-btn {
         font-size: 0.8rem;
-        height: 60px;
+        height: 80px;
         width: 45%;
     }
 
 
-    .navlinks li a {
-        font-size:1.6rem;
+    .navlinks a {
+        font-size: 1.4rem;
     }
+
     .navlinks {
         flex-direction: column;
         position: absolute;
@@ -510,12 +533,14 @@ footer {
         right: 100%;
         z-index: 2;
         gap: 2rem;
-        transition: .5s ease-in-out;
+        transition: .5s;
     }
+
     /* For javascript */
     .navlinks-active {
         right: 0;
     }
+
     .menu-icon {
         display: block;
         z-index: 5;
@@ -530,13 +555,15 @@ footer {
     .header-heading::before {
         top: 160px;
     }
+
     header {
         justify-content: flex-start;
     }
-    .cart-icon{
+
+    .cart-icon {
         top: 100px;
         z-index: 0;
-        position:absolute;
+        position: absolute;
     }
 
 
@@ -544,16 +571,19 @@ footer {
     .section-two-heading {
         font-size: 2rem;
     }
+
     .section-two-para {
         font-size: .9rem;
+        line-height: 1rem;
     }
-    
+
     .section-two-price {
         font-size: 1.1rem;
     }
-    
+
     .section-two-image {
-        width:10rem ;
+        width: 10rem;
+        margin-top: 110px;
     }
 
     .section-two-btn {
@@ -561,13 +591,19 @@ footer {
     }
 
     .section-two-container {
-        height: 20rem;
-        margin-top: 0px;
+        height: 18rem;
+        margin-top: -200px;
+
+    }
+
+    .section {
+        margin-bottom: 0px;
+
     }
 
     .section-two-inner-container {
         padding: 20px;
-        width: 100%
+        width: 100%;
     }
 
 
@@ -590,6 +626,3 @@ footer {
     }
 
 }
-
-
-
